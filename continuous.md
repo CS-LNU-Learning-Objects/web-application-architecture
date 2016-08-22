@@ -1,6 +1,6 @@
 # The continuous way of web application development
 
-*prior  knowledge  - Programming, Web development, Basic git handling*
+*Prior  knowledge  - Programming, Web development, Basic git handling*
 
 This text will give you a introduction to terms like Continuous Integration (CI), Continuous Development (CDev) and Continuous Deployment (CDep). It will try to explain the difference between these terms and also try to answer the questions what and why.
 
@@ -28,19 +28,15 @@ This means checking code for syntax error, runs some code hinting to check that 
 3. **Pre-deployed tests**
 In this step runs all types of test that don´t need code to be deployed to a server. This is mainly [unit tests](#) or maybe some [functional tests](#). Tests running in this steps should be easy to write and fast to execute.
 
-4. **Packing and deploying to test eniviroment**. In this your code files should be compressed and minified (or maybe turn into WAR- or JAR-files). Static stuff should be send to your CDN for faster presentation. If you are working with [containers](#Link to container) the container should be created with all it dependencies required to run your application. The container is deployed to a test eniviroment.
+4. **Packing and deploying to test environment**. In this your code files should be compressed and minified (or maybe turn into WAR- or JAR-files). Static stuff should be send to your CDN for faster presentation. If you are working with [containers](#Link to container) the container should be created with all it dependencies required to run your application. The container is deployed to a test environment.
 
 5. **Post-deployed testing**
+When your application is deployed to the testing environment you can run test that ensure that the integration is OK, including functional, integration and performance tests.
 
+#### Fast notifications
+There some thing to remember when walking through this pipeline. First of all - we have this pipeline to ensure that we get the feedback needed about problems as fast as possible. This will mean that if we got some problem/error in one of the step the automated system the developers must be notified as soon as possible to fix the problem. If its just a simple problem the responsible developer can fix it self and redo the build process, if its a bigger problem more developers in the team should concentrate to fix the problem before implementing more features. The main thing is that the pile should support fast notifications if some step fails, often trough messages like mail or [slack](#).
 
+#### Automate all things!
+Always try to automate all things that could be automated! This will guarantee that the process is always treated the same way to avoid manual errors. This will also take care of the documentation. A script that automate some thing is also a documentation that tells how the process is done. If you do things manual you are responsible of writing and update with changes. Not many developers like writing documentation documents.
 
-Building and deploying to a test environment
-Post-deploy tests
-
-### Test, test, test
-
-
-But remember, there are no silver bullets when talking about web application development.
-,
-
-What we must know is that there will never be silver bullets in software development. The complexity of the applications, projects, teams, technology and so on will always be different.
+What we also must know is that there will never be silver bullets in software development. The complexity of the applications, projects, teams, technology and so on will always be different.

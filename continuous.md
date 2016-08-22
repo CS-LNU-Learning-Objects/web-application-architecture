@@ -31,7 +31,18 @@ In this step runs all types of test that don´t need code to be deployed to a se
 4. **Packing and deploying to test environment**. In this your code files should be compressed and minified (or maybe turn into WAR- or JAR-files). Static stuff should be send to your CDN for faster presentation. If you are working with [containers](#Link to container) the container should be created with all it dependencies required to run your application. The container is deployed to a test environment.
 
 5. **Post-deployed testing**
-When your application is deployed to the testing environment you can run test that ensure that the integration is OK, including functional, integration and performance tests.
+When your application is deployed to the testing environment you can run test that ensure that the integration is OK, including functional, integration and performance tests. In the CI you also may have some manual testing (QA- Quality Assurance) of your application in this step.
+
+
+### Go further - Continuous Delivery and Continuous Deployment
+As CI allows manual validations of the application Continuous Delivery aim to take this a step further and automate all validations and testing, meaning no manual QA-phase. The main thing is to get the code ready for production, not putting it in production but have confidence it will work in the wild. The application **can** be put in production. Not putting it directly in production could depends on maybe marketing ask to wait for a bigger release or collect many feature and release these in groups.
+
+When talking about Continuous Deployment it means that the code will be put in production the moment it passed all validation and tests. This is also done automated. Maybe some tests (the post-production tests) need to be rerun into the production environment and the system have some kind of feature to rollback changes. This is often done by having a proxy in front of the application that could be changed between different versions of the main application. After a while (when you are sure the application works as excepted) you can remove old releases.
+
+Talking about release strategies is out of scope of this text but there are techniques in this step that allow things like "feature toggles". That means we can turn off and on features in the application to test them in the wild, maybe for a specific kind of users.
+
+### Outro
+To get your development to follow the whole Continuous Deployment pipeline takes lot of work and experience. Most companies try to start to get the CI pipeline to work first, thats a good way to ensure a philosophy like "run fast, test first".
 
 #### Fast notifications
 There some thing to remember when walking through this pipeline. First of all - we have this pipeline to ensure that we get the feedback needed about problems as fast as possible. This will mean that if we got some problem/error in one of the step the automated system the developers must be notified as soon as possible to fix the problem. If its just a simple problem the responsible developer can fix it self and redo the build process, if its a bigger problem more developers in the team should concentrate to fix the problem before implementing more features. The main thing is that the pile should support fast notifications if some step fails, often trough messages like mail or [slack](#).

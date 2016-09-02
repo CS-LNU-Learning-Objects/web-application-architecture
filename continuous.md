@@ -61,4 +61,4 @@ Always try to automate all things that could be automated! This will guarantee t
 What we also must know is that there will never be silver bullets in software development. The complexity of the applications, projects, teams, technology and so on will always be different.
 
 ## resources
-Martin Fowler has written [an article](http://martinfowler.com/articles/continuousIntegration.html) about his thoughts of CI
+Martin Fowler has written [an article](http://martinfowler.com/articles/continuousIntegration.html) about his thoughts of CI.

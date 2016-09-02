@@ -1,15 +1,15 @@
-This text is written to give a short introduction to containers and docker in particular. It´s mainly written from a developers point of view. +
+This text is written to give a short introduction to containers and docker in particular. It´s mainly written from a developers point of view.
 
 # Introduction to containers and Docker
-To understand what a container is you first have to be familiar with what virtualization is. That is a technique that allows you to run independent virtual machine on a host machine. As a developer you can on your local machine, what ever OS you are using, start up a isolated virtual machine running a different OS. This is often done by installing a [hypervisor](https://en.wikipedia.org/wiki/Hypervisor) which is a program that lays.
+To understand what a container is you first have to be familiar with what virtualization is. That is a technique that allows you to run independent virtual machine(s) on a host machine. As a developer you can, on your local machine, what ever OS you are using, start up a isolated virtual machine running a different OS. This is often done by installing a [hypervisor](https://en.wikipedia.org/wiki/Hypervisor) which is a program that lays.
 
 Virtualization is also very important when talking cloud computing and IT architecture. Virtualization of machines give opportunities to easy add, change and remove servers in a cloud solution. This is important i modern web scale solution where the applications/solutions have to scale in a fast and easy way without the need of buying new hardware.
 
 If you want to learn more about different virtualization techniques [here is an article for you](http://www.virtuatopia.com/index.php/An_Overview_of_Virtualization_Techniques)
 
 
-## So what is a container
-Just as we define the virtualized machine as an isolated operating system on a host system the same goes for containers. We can describe it further as self-contained execution environments. They have their own isolated CPU, memory, I/O and network resources, but share the kernel of the host operating system. The difference from virtual machines is that containers are more light weight, faster to start and handling in different scenarios. This make containers a good fit when working with web application solutions, especially in a situation where scale is important. Hopefully you can also see the connection to developing [microservices](#) where containers is ideal for handling different microservices.
+## So what is a container?
+Just as we define the virtualized machine as an isolated operating system on a host system the same goes for containers. We can describe it further as self-contained execution environments. They have their own isolated CPU, memory, I/O and network resources, but share the kernel of the host operating system. The difference from virtual machines is that containers are more light weight, faster to start and handling in different scenarios. This make containers a good fit when working with web application solutions, especially in a situation where scale is important. Hopefully you can also see the connection to developing [microservices](./microservices.md) where containers is ideal for handling different microservices.
 
 In this text we will concentrate on Linux containers and especially docker. Containers is nothing new and you can find other reminding techniques like FreeBSD Jails and Solaris Zones The Linux systems have features like [cgroups](https://en.wikipedia.org/wiki/Cgroups) and [namespaces](http://man7.org/linux/man-pages/man7/namespaces.7.html) that helps with the isolation and handling of system resources so that they get dedicated to specific processes.
 
@@ -126,7 +126,7 @@ CMD defines a command that will run when the container starts.
 EXPOSE exposes the standard HTTP ports so that we browse to the web server.
 
 ### Get predefined images
-Pretty soon you will realize that the [Docker Hub](https://hub.docker.com/) is a gold mine when getting god images for docker containers. Docker is an open community and if you search on the hub (or on github) you will find many people defining different services you can use. Try find a Apache with PHP for example. I bet you find one and could have a Linux server with Apache and PHP running in a couple of minutes. It is also a very good way to learn writing own docker-files and linking them together. 
+Pretty soon you will realize that the [Docker Hub](https://hub.docker.com/) is a gold mine when getting god images for docker containers. Docker is an open community and if you search on the hub (or on github) you will find many people defining different services you can use. Try find a Apache with PHP for example. I bet you find one and could have a Linux server with Apache and PHP running in a couple of minutes. It is also a very good way to learn writing own docker-files and linking them together.
 
 ### Start learning about docker
 This text will not go through the practical view of Docker more than this. The best way to start learning about Docker and creating your own containers is to visit the [docker homepage and study the documentation](https://docs.docker.com/).

@@ -35,10 +35,14 @@ In a microservice scenario the application is composed by smaller independent se
 
 IMAGE HERE
 
+In most cases when we are talking about microservices we are talking about back-end services that returns data in a pleasant format like JSON. This means that client applications (applications running in the browser) often consume data from one or more services and put it together in monolithic way in a so called single page application (SPA). Maybe the future holds a more microservice-way of looking in front-end developing through technologies like [web components](http://webcomponents.org/)
+
 #### Advantages
 If we look at the scaling we can now easy scale up that part of the application that is needed to scale. We are probably getting more requests to our webshop-service than to the registration service. When we develop more independent services we also have more space for innovation. Trying new features in a monolithic application is often hard and complicated, we are bound to a specific technology and program language. If we are using a more service separated approach we can have different teams working on different services, with different technologies. We can also choose the best tool for the task, maybe nodeJS is better for some kind of services and JAVA for another. We can also follow the technology changes (new frameworks for example) when developing new services.
 
-A smaller service is also more understandable. It is easier to get a grip what the service is doing and this also cut the need for documentation. This is also easier for newcomers to jump into the code in a smaller service. Another good thing is that it easy to deploy and put the specific service into production. We also have better control when we need to rollback a problem or fault isolation. Smaller parts will be easier to test since they have a clear responsibility.
+A smaller service is also more understandable. It is easier to get a grip what the service is doing and this also cut the need for documentation. Even if you´re not used to the programming language you should get a grip of what the service does.
+
+This is also easier for newcomers to jump into the code in a smaller service. Another good thing is that it easy to deploy and put the specific service into production. We also have better control when we need to rollback a problem or fault isolation. Smaller parts will be easier to test since they have a clear responsibility.
 
 #### Disadvantages
 So this microservice thinking is a silver bullet? Well as you probably know by now there are no silver bullets in web development. As you probably notice when we building smaller application in the service oriented way there will be more application and probably more servers to operate and install then when using the monolithic way. This was maybe a bigger problem before the rise of virtualization and the ability to work with containers. For more information about this see the paper on [containers/docker](#)
@@ -48,5 +52,4 @@ The biggest problem is still how to split the application and what should be a s
 
 ### Resourses
 
-More reading:
-http://martinfowler.com/articles/microservices.html
+Martin Fowler is a design pattern guru. Here is an article about microservices written by him: http://martinfowler.com/articles/microservices.html

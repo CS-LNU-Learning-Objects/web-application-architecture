@@ -59,3 +59,6 @@ There some thing to remember when walking through this pipeline. First of all - 
 Always try to automate all things that could be automated! This will guarantee that the process is always treated the same way to avoid manual errors. This will also take care of the documentation. A script that automate some thing is also a documentation that tells how the process is done. If you do things manual you are responsible of writing and update with changes. Not many developers like writing documentation documents.
 
 What we also must know is that there will never be silver bullets in software development. The complexity of the applications, projects, teams, technology and so on will always be different.
+
+## resources
+Martin Fowler has written [an article](http://martinfowler.com/articles/continuousIntegration.html) about his thoughts of CI

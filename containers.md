@@ -84,7 +84,7 @@ This text will not teach you the practical steps of using Docker. You will have 
 First of all you have to [install docker for your OS](https://docs.docker.com/engine/installation/). Maybe you don´t want to put it on your local OS and of course you can install it on a virtualized machine, through virtual box or some other hypervisor.
 
 #### The dockerfile
-When creating a container you often define its content in a dockerfile. This file allows us to give instructions to the docker engine which base image to use and what commands to give it. Look at the example below taken form https://github.com/dockerfile/nginx:
+When creating a container you often define its content in a dockerfile. This file allows us to give instructions to the docker engine which base image to use and what commands to give it. Look at the example below taken from https://github.com/dockerfile/nginx:
 
 ```
 # Pull base image.
@@ -102,8 +102,6 @@ RUN \
 # Define mountable directories.
 VOLUME ["/etc/nginx/sites-enabled", "/etc/nginx/certs", "/etc/nginx/conf.d", "/var/log/nginx", "/var/www/html"]
 
-# Define working directory.
-WORKDIR /etc/nginx
 
 # Define default command.
 CMD ["nginx"]
@@ -126,6 +124,12 @@ VOLUME is mounting different directories. As you probably remember does not dock
 CMD defines a command that will run when the container starts.
 
 EXPOSE exposes the standard HTTP ports so that we browse to the web server.
+
+### Get predefined images
+Pretty soon you will realize that the [Docker Hub](https://hub.docker.com/) is a gold mine when getting god images for docker containers. Docker is an open community and if you search on the hub (or on github) you will find many people defining different services you can use. Try find a Apache with PHP for example. I bet you find one and could have a Linux server with Apache and PHP running in a couple of minutes. It is also a very good way to learn writing own docker-files and linking them together. 
+
+### Start learning about docker
+This text will not go through the practical view of Docker more than this. The best way to start learning about Docker and creating your own containers is to visit the [docker homepage and study the documentation](https://docs.docker.com/).
 
 ## References and further reading
 [101 Containers](http://www.developer.com/design/containers-101.html)

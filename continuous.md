@@ -1,6 +1,6 @@
-# The continuous way of web application development
+# Continuous Integration
 
-*Prior  knowledge  - Programming, Web development, Basic git handling*
+*Prior  knowledge  - Programming, Web development, Basic git*
 
 This text will give you a introduction to terms like Continuous Integration (CI), Continuous Development and Continuous Deployment. It will try to explain what these terms means, how they differs and why they are main concepts in the [devOps](https://en.wikipedia.org/wiki/DevOps) community.
 
@@ -60,5 +60,5 @@ Always try to automate all things that could be automated! This will guarantee t
 
 What we also must know is that there will never be silver bullets in software development. The complexity of the applications, projects, teams, technology and so on will always be different.
 
-## resources
+## Resources
 Martin Fowler has written [an article](http://martinfowler.com/articles/continuousIntegration.html) about his thoughts of CI.

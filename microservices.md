@@ -57,4 +57,4 @@ The biggest problem is still how to split the application and what should be a s
 
 ### Resourses
 
-Martin Fowler is a design pattern guru. Here is an article about microservices written by him - A must read: http://martinfowler.com/articles/microservices.html
+Martin Fowler is a design pattern guru. Here is an article about microservices written by him and James Lewis - A must read: http://martinfowler.com/articles/microservices.html

@@ -55,6 +55,6 @@ A monolithic application will always have better performance. The internal calls
 
 The biggest problem is still how to split the application and which parts should be a services. Often you specify a service as a handler of a feature or a specific function in a application. In many cases it can be hard to see the clear line of what should be a service.
 
-### Resourses
+### Resources
 
 Martin Fowler is a design pattern guru. Here is an article about microservices written by him and James Lewis - A must read: http://martinfowler.com/articles/microservices.html

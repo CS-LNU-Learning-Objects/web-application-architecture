@@ -1,6 +1,6 @@
 This text is written to give a short introduction to containers and docker in particular. It´s mainly written from a developers point of view.
 
-## Introduction to containers and Docker
+# Introduction to containers and Docker
 To understand what a container is you first have to be familiar with what virtualization is. That is a technique that allows you to run independent virtual machine(s) on a host machine. As a developer you can, on your local machine, what ever OS you are using, start up a isolated virtual machine running a different OS. This is often done by installing a [hypervisor](https://en.wikipedia.org/wiki/Hypervisor) which is a program that lays.
 
 Virtualization is also very important when talking cloud computing and IT architecture. Virtualization of machines give opportunities to easy add, change and remove servers in a cloud solution. This is important i modern web scale solution where the applications/solutions have to scale in a fast and easy way without the need of buying new hardware.

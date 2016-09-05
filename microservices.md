@@ -20,7 +20,7 @@ The presentation layer (UI) is responsible for the code rendering the client sid
 
 The problem is still that the application is one big unit with all its functionality. The scale problem is often solved this by using a load balancer and multiple instances of the application to split the traffic over several applications.
 
-Of course you are not bound to use just three layers. In some cases you may want to separate the code more or maybe add a layer such as an API layer generating data in standard format such as JSON or XML. This could still lead to extremely complex that is hard to work with and hard to scale. This is called **n-layer architecture**.
+Of course you are not bound to use just three layers. In some cases you may want to separate the code more or maybe add a layer such as an API layer generating data in standard format such as JSON or XML. This could still lead to complex applications, that is hard to work with and hard to scale. This is called **n-layer architecture**.
 
 ### SOA - Service Oriented Architecture
 We tried to solved this by also splitting applications horizontally not only vertical. Instead of talking about single unit applications we were trying to build applications with different separated services that could collaborate together. The services can be run in separate operating systems so they easily can be scaled in one or more servers. This mean a more physical separation that not was intended with the n-layer architecture (even if this could work in that architecture also).
@@ -53,7 +53,7 @@ So this microservice thinking is a silver bullet? Well as you probably know by n
 
 A monolithic application will always have better performance. The internal calls in the application goes through the internal code and this will be faster then API calls. The services will have to make lots of request to each other to communicate and become the whole application. Today we probably have fast internal LAN and maybe the problem don´t would be so big but in some rare cases it will be a concern.
 
-The biggest problem is still how to split the application and what should be a service. Often you of a service as a handler of a feature or a specific function in a application but it can be hard to se the clear line.
+The biggest problem is still how to split the application and which parts should be a services. Often you specify a service as a handler of a feature or a specific function in a application. In many cases it can be hard to see the clear line of what should be a service.
 
 ### Resourses
 

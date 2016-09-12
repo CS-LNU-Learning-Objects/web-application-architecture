@@ -55,7 +55,7 @@ So why do we think Docker is so popular? Of course we understand the simplicity 
 
 * **Single process**
 
-  Docker tries to restricts containers to run as a single process. Imagine that you setting up a dynamic web application. You will need to have a web server, a reversed proxy, some kind of database server, some persistent storage, maybe some caching server and so on. Best practice is to create a own container for each of this process. Maybe a node.js-conatiner running the web application, a nginx-container as an reversed proxy, a mongodb-container for database and one container for persistent storage. If you have web scale in mind each service have multiple containers.
+  Docker tries to restricts containers to run as a single process. Imagine that you setting up a dynamic web application. You will need to have a web server, a reversed proxy, some kind of database server, some persistent storage, maybe some caching server and so on. Best practice is to create a own container for each of this process. Maybe a node.js-container running the web application, a nginx-container as an reversed proxy, a mongodb-container for database and one container for persistent storage. If you have web scale in mind each service have multiple containers.
 
   This will get you a more granular update process. No need to interfere with the web server if a database update is done. Also, this is ideal for building microservices-based applications.
 
